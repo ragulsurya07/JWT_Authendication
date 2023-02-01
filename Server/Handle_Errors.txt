@@ -1,0 +1,86 @@
+code 11000 - duplicate key error ( Example: email already registered (or) Unsername already registered )
+
+code 404 - Not found
+
+code 201 - Created
+
+code 204 - No content
+
+code 400 - Bad request
+
+code 401 - Unauthorized response
+
+code 402 - Payment Required is a nonstandard response status code that is 
+            reserved for future use. This status code was created to enable 
+            digital cash or (micro) payment systems and would indicate that the 
+            requested content is not available until the client makes a payment.
+
+code 403 - Forbidden
+
+code 405 - method not allowed
+
+code 200 - Ok (or) Success
+
+-------------------------------------------------------
+
+//authControl.js Register page errors handling....
+
+[
+  ValidatorError: Name is Required
+      at validate (/home/akitra/Training_files/React Files/JWT-Project/JWT_Auth-2/Server/node_modules/mongoose/lib/schematype.js:1346:13)
+      at SchemaType.doValidate (/home/akitra/Training_files/React Files/JWT-Project/JWT_Auth-2/Server/node_modules/mongoose/lib/schematype.js:1330:7)
+      at /home/akitra/Training_files/React Files/JWT-Project/JWT_Auth-2/Server/node_modules/mongoose/lib/document.js:2877:18
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+
+properties: {
+      validator: [Function (anonymous)],
+      message: 'Name is Required',
+      type: 'required',
+      path: 'username',
+      value: ''
+    },
+    kind: 'required',
+    path: 'username',
+    value: '',
+    reason: undefined,
+    [Symbol(mongoose:validatorError)]: true
+  },
+  ValidatorError: Email is Required
+      at validate (/home/akitra/Training_files/React Files/JWT-Project/JWT_Auth-2/Server/node_modules/mongoose/lib/schematype.js:1346:13)
+      at SchemaType.doValidate (/home/akitra/Training_files/React Files/JWT-Project/JWT_Auth-2/Server/node_modules/mongoose/lib/schematype.js:1330:7)
+      at /home/akitra/Training_files/React Files/JWT-Project/JWT_Auth-2/Server/node_modules/mongoose/lib/document.js:2877:18
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+
+    properties: {
+      validator: [Function (anonymous)],
+      message: 'Email is Required',
+      type: 'required',
+      path: 'email',
+      value: ''
+    },
+    kind: 'required',
+    path: 'email',
+    value: '',
+    reason: undefined,
+    [Symbol(mongoose:validatorError)]: true
+  },
+  ValidatorError: Password is Required
+      at validate (/home/akitra/Training_files/React Files/JWT-Project/JWT_Auth-2/Server/node_modules/mongoose/lib/schematype.js:1346:13)
+      at SchemaType.doValidate (/home/akitra/Training_files/React Files/JWT-Project/JWT_Auth-2/Server/node_modules/mongoose/lib/schematype.js:1330:7)
+      at /home/akitra/Training_files/React Files/JWT-Project/JWT_Auth-2/Server/node_modules/mongoose/lib/document.js:2877:18
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+        
+    properties: {
+      validator: [Function (anonymous)],
+      message: 'Password is Required',
+      type: 'required',
+      path: 'password',
+      value: ''
+    },
+    kind: 'required',
+    path: 'password',
+    value: '',
+    reason: undefined,
+    [Symbol(mongoose:validatorError)]: true
+  }
+]
